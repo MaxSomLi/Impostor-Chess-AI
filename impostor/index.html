@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>AI IMPOSTORS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="eval.js" defer></script>
+    <script src="net.js" defer></script>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <form id="form">
+        <div class="radio-group">
+            <div class="radio-label">
+                <input type="radio" id="roman" name="bot" value="Roman" checked>
+                <label for="roman">ROMAN</label>
+            </div>
+            <div class="radio-label">
+                <input type="radio" id="vira" name="bot" value="Vira">
+                <label for="vira">VIRA</label>
+            </div>
+            <div class="radio-label">
+                <input type="radio" id="max" name="bot" value="Max">
+                <label for="max">MAX</label>
+            </div>
+            <div class="radio-label">
+                <input type="radio" id="kassandra" name="bot" value="Kassandra">
+                <label for="kassandra">KASSANDRA</label>
+            </div>
+        </div>
+        <div class="button-group">
+            <input type="submit" name="w" onclick="makeBoard(true, event)" value="play as White">
+            <input type="submit" name="b" onclick="makeBoard(false, event)" value="play as Black">
+        </div>
+    </form>
+    <button id="start" onclick="mod()">START</button>
+    <button id="music" onclick="sound = !sound;">SOUND</button>
+    <p></p>
+</body>

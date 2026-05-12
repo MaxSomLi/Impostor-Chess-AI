@@ -1,0 +1,95 @@
+body {
+    width: 640px;
+    height: 360px;
+    background-color: #322947;
+    font-family: monospace;
+    font-size: medium;
+    color: black;
+}
+
+
+input[type="submit"], button {
+    width: 100px;
+    height: 100px;
+    font: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: rgb(149, 21, 175);
+    border-radius: 20%;
+    border: 2px solid black;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #322947;
+}
+
+canvas {
+    background-image: url("board.png");
+    background-size: contain;
+    position: absolute;
+    left: 170px;
+    top: 30px;
+    display: none;
+}
+
+.button-group, .radio-group, .radio-label {
+    margin-top: 10px;
+}
+
+.radio-label, .button-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.radio-label {
+    align-self: baseline;
+}
+
+form, .radio-group {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form {
+    position: absolute;
+    left: 195px;
+    right: 195px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #322947;
+    border: 1px solid black;
+}
+
+input[type="radio"]:checked {
+    background: rgb(149, 21, 175);
+}
+
+#start {
+    display: none;
+}
+
+#music {
+    position: absolute;
+    top: 250px;
+    left: 530px;
+}
+
+p {
+    font-size: larger;
+    font-family: inherit;
+    text-align: center;
+}
