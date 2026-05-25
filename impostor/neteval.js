@@ -1,8 +1,9 @@
 const TIMES = 100;
 
-let wins = 0, kass = false, rom = !kass, f, board;
+let wins = 0, kass = true, rom = !kass, f, board;
 
 function evalA() {
+    canStart = true;
     for (let ii = 0; ii < TIMES; ii++) {
         f = true;
         let mc = 0, curr = true;
@@ -16,7 +17,7 @@ function evalA() {
             [WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN],
             [WHITE_ROOK, WHITE_KNIGHT_L, WHITE_BISHOP, WHITE_QUEEN, WHITE_KING, WHITE_BISHOP, WHITE_KNIGHT_R, WHITE_ROOK]
         ];
-        while (f && mc < MC_M) {
+        while (f) {
             if (curr == kass) {
                 let pm = getLegalMoves(kass, board);
                 if (pm.length > 0) {

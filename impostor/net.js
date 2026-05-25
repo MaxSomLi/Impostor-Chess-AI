@@ -7,7 +7,6 @@ let weights, biases, hiddenWeights1, hiddenBiases1, hiddenWeights2, hiddenBiases
 (async () => {
     await fetch("./chess-model.json").then(res => res.json()).then(model => {
         weights = model.weights;
-        biases = model.biases;
         hiddenWeights1 = model.hiddenWeights1;
         hiddenBiases1 = model.hiddenBiases1;
         hiddenWeights2 = model.hiddenWeights2;

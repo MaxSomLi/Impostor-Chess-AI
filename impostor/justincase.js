@@ -1,4 +1,4 @@
-const EPS = 0.2, CT = 10000, LR = 0.01, SCALE = Math.sqrt(6 / (TOTAL + TOTAL)), GAMMA = 0.95;
+const MX = 2, MN = 0.1, EPS = 0.2, CT = 10000, LR = 0.01, GAMMA = 0.95;
 
 
 let weights, hiddenWeights1, hiddenBiases1, hiddenWeights2, hiddenBiases2;
